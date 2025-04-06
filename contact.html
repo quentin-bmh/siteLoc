@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="logo">Ty Yan</div>
+          <nav>
+            <div class="burger" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="maison.html">La maison</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+        </div>
+        <div class="container mobile-menu" id="mobileMenu" style="display: none;">
+            <div class="container mobile-menu" id="mobileMenu" style="display: none;">
+                <a href="index.html">Accueil</a>
+                <a href="maison.html">La maison</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="contact.html">Contact</a>
+              </div>              
+        </div>
+      </header>
+      <main class="contact-container">
+        <h1>Envie de vacances à Ty Yan ? Écrivez-nous !</h1>
+    
+        <div class="contact-main">
+          <div class="contact-form">
+            <h2>Formulaire de contact</h2>
+            <form action="#" method="POST">
+              <input type="text" name="name" placeholder="Votre nom" required>
+              <input type="email" name="email" placeholder="Votre email" required>
+              <textarea name="message" rows="6" placeholder="Votre message..." required></textarea>
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+    
+          <div class="contact-info">
+            <h2>Coordonnées</h2>
+            <p><strong>Téléphone :</strong> 06 00 00 00 00</p>
+            <p><strong>Email :</strong> location@tyyan.bzh</p>
+            <p><strong>Adresse :</strong> Lomener, 56270 Ploemeur, Bretagne</p>
+            <p>Nous répondons rapidement pour toute demande de réservation ou d’information.</p>
+          </div>
+        </div>
+    
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2736.049109251994!2d-3.421689684438558!3d47.71177597918916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48103cb6b7f0ff0b%3A0x3545422f2d9dd163!2sLomener%2C%2056270%20Ploemeur!5e0!3m2!1sfr!2sfr!4v1680000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+    
+        <p class="thanks-message">Merci pour votre visite, et à très bientôt en Bretagne 🍃</p>
+      </main>
+    <script src="script.js"></script>
+</body>
+</html>

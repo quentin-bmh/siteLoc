@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="logo">Ty Yan</div>
+          <nav>
+            <div class="burger" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="maison.html">La maison</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+        </div>
+        <div class="container mobile-menu" id="mobileMenu" style="display: none;">
+            <div class="container mobile-menu" id="mobileMenu" style="display: none;">
+                <a href="index.html">Accueil</a>
+                <a href="maison.html">La maison</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="contact.html">Contact</a>
+              </div>              
+        </div>
+      </header>
+      <main>
+
+        <section class="section">
+          <h1>Bienvenue à Ty Yan</h1>
+          <p>La maison idéale pour se ressourcer en bord de mer, en famille ou entre amis.</p>
+        </section>
+    
+        <section class="section">
+          <h2>Disposition de la maison</h2>
+          <div class="highlight">
+            <strong>Rez-de-chaussée :</strong> une grande chambre avec 4 couchages (2 lits superposés), salle de bain "vintage", toilettes séparées.
+          </div>
+          <div class="highlight">
+            <strong>Étage :</strong> deux chambres avec lits doubles (140 cm), salle de bain.
+          </div>
+          <div class="highlight">
+            <strong>Mezzanine :</strong> espace enfant + coin télétravail équipé (écran, clavier, imprimante, casque sur demande).
+          </div>
+          <img src="images/image5.jpg" alt="Chambre au rez-de-chaussée">
+        </section>
+    
+        <section class="section">
+          <h2>Confort & télétravail</h2>
+          <p>Connexion fibre 390 Mb/s, coin bureau, espace calme... Idéal pour télétravailler dans un cadre agréable.</p>
+          <img src="images/image12.jpg" alt="Espace bureau sur la mezzanine">
+        </section>
+    
+        <section class="section">
+          <h2>Extérieurs & détente</h2>
+          <p>Côté sud, profitez d'une grande véranda et d’une terrasse pour les repas. Jardin clos sans vis-à-vis, terrasse couverte, et aire de jeux pour les enfants (balançoires, toboggan, marelle).</p>
+          <img src="images/image8.jpg" alt="Jardin de la maison">
+        </section>
+    
+        <section class="section">
+          <h2>Prêt à réserver ?</h2>
+          <p>La maison est disponible à la location du samedi au samedi. Contactez-nous dès maintenant pour vérifier les disponibilités.</p>
+          <a href="contact.html" class="btn-reservation">Nous contacter</a>
+        </section>
+    
+      </main>
+    <script src="script.js"></script>
+</body>
+</html>
