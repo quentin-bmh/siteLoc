@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accueil - La Taleyrandie</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">La Taleyrandie</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="burger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="accueil.html" class="active">Accueil</a></li>
+        <li><a href="maison.html">La Maison</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../index.html">Retour</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Bienvenue à La Taleyrandie</h1>
+      <p>
+        Nichée dans un reposant écrin de verdure de plus de 2 hectares, La Taleyrandie vous accueille au cœur du Périgord pour des vacances paisibles et ressourçantes. Vous profiterez d’un cadre naturel exceptionnel, entre chênes centenaires, orchidées sauvages, et peut-être même quelques chevreuils en balade.
+      </p>
+
+      <div class="image-grid">
+        <img src="/imgT/exterieur1.png" alt="Vue extérieure 1" />
+        <img src="/imgT/exterieur2.png" alt="Vue extérieure 2" />
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>Une maison de charme, pour un séjour inoubliable</h2>
+      <p>
+        Cette grande maison de campagne chic allie tradition et modernité, et propose 4 chambres spacieuses pouvant accueillir jusqu’à 8 personnes. Vous y trouverez 2 salles de bain, une cuisine équipée, une grande véranda, plusieurs espaces repas en extérieur, et un coin détente en mezzanine avec home cinéma.
+      </p>
+
+      <div class="image-grid">
+        <img src="/imgT/chambre1LitDouble.png" alt="Chambre 1" />
+        <img src="/imgT/chambre2LitDouble.png" alt="Chambre 2" />
+        <img src="/imgT/chambre3LitSimple.png" alt="Chambre 3" />
+        <img src="/imgT/chambre4LitSimple.png" alt="Chambre 4" />
+        <img src="/imgT/salle2Bain1.png" alt="Salle de bain 1" />
+        <img src="/imgT/salle2Bain12.png" alt="Salle de bain 1" />
+        <img src="/imgT/salle2Bain13.png" alt="Salle de bain 1" />
+        <img src="/imgT/salle2Bain22.png" alt="Salle de bain 2" />
+        <img src="/imgT/cuisine2.png" alt="Cuisine" />
+        <img src="/imgT/cuisine1.png" alt="Cuisine" />
+        <img src="/imgT/restauration1.png" alt="restauration" />
+        <img src="/imgT/restauration3.png" alt="restauration" />
+        <img src="/imgT/restauration5.png" alt="restauration" />
+        <img src="/imgT/restauration7.png" alt="restauration" />
+      </div>
+
+      <p>
+        La piscine à débordement, les aires de jeux, le babyfoot Bonzini, le piano numérique, et même un golf d'entraînement sur place complètent l'expérience. Le tout, connecté à la fibre ultra haut débit (2 Gbit/s) grâce à la Livebox 7 et ses 3 répéteurs.
+      </p>
+
+      <div class="image-grid">
+        <img src="/imgT/piscine3.png" alt="Coin détente" />
+        <img src="/imgT/baby-foot.png" alt="baby-foot" />
+        <img src="/imgT/golf.png" alt="golf" />
+      </div>
+
+      <p>
+        À proximité, découvrez les merveilles du Périgord : Périgueux, les Eyzies, les grottes de Lascaux ou encore Sarlat. Que vous soyez amateurs de nature, d’histoire ou de gastronomie, La Taleyrandie vous attend !
+      </p>
+
+      <div class="image-grid">
+        <img src="/imgT/grotte.png" alt="Lascaux" />
+        <img src="/imgT/gastronomie.png" alt="gastronomie périgourdine" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - La Taleyrandie</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ty Yan - Location de Maison</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="logo">Ty Yan</div>
+          <nav>
+            <div class="burger" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="maison.html">La maison</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html">Retour</a></li>
+              </ul>
+          </nav>
+        </div>
+        <div class="container mobile-menu" id="mobileMenu" style="display: none;">
+            <div class="container mobile-menu" id="mobileMenu" style="display: none;">
+                <a href="accueil.html">Accueil</a>
+                <a href="maison.html">La maison</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="contact.html">Contact</a>
+                <li><a href="../index.html">Retour</a></li>
+              </div>              
+        </div>
+      </header>
+    
+      <main class="container">
+        <section>
+          <h2>À propos de ce logement</h2>
+          <p>Des vacances faites à BREIZH !<br>
+          Changer de plage chaque jour, ici, c’est possible ! A Lomener, petit port côtier, à vous de choisir, à pied depuis la maison, entre les grandes étendues de sable des anses du Stole ou du Pérello, les plages familiales de Port Fontaine, une petite crique, ou une balade sur les rochers qui bordent la côte.<br><br>
+          Laisser la voiture le temps des vacances, les commerces de Lomener sont nombreux et du port vous pourrez même embarquer pour une traversée direction l’île de Groix.<br><br>
+          <strong>Le logement</strong><br>
+          Aménagée pour 8 personnes, la maison comprend en rez-de-chaussée une grande chambre avec 4 couchages 1 personne en 2 lits superposés, salle de bain « vintage » et toilettes. Les deux autres chambres avec lits de 140, une salle de bains sont à l’étage. Une grande mezzanine accueille un espace enfant mais également un environnement dédié au télétravail avec disponible à la demande, écran, imprimante scanner, clavier, casque. Connexion fibre 390 Mb/s.<br><br>
+          On dit qu’en Bretagne, « il fait beau plusieurs fois par jour », vous pourrez donc profiter côté sud de la grande véranda et de la terrasse extérieure pour vous détendre ou prendre vos repas.<br><br>
+          Le jardin clos à l'arrière sans vis à vis dispose d'une terrasse couverte et les enfants apprécieront l'aire de jeu avec balançoires, toboggan et marelle.<br><br>
+          Envie d’une bolée de cidre… d’une crêpe au caramel beurre salé ? A bientôt en Bretagne !<br>
+          A proximité, ligne de bus directe gare SNCF de Lorient. Trois vélos sont à votre disposition pour découvrir la côte.<br><br>
+          <em>Location du samedi au samedi</em>
+          </p>
+        </section>
+    
+        <section>
+          <h2>Galerie Photos</h2>
+          <div class="carousel">
+            <div class="carousel-track" id="carouselTrack">
+              <script>
+                for (let i = 1; i <= 24; i++) {
+                  document.write(`<img src="/img/image${i}.png" alt="Image ${i}">`);
+                }
+              </script>
+            </div>
+          </div>
+          <div class="carousel-buttons">
+            <button onclick="prevSlide()">← Précédent</button>
+            <button onclick="nextSlide()">Suivant →</button>
+          </div>
+        </section>
+      </main>
+    
+      <footer>
+        <p>&copy; 2025 Ty Yan - Tous droits réservés</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
