@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-          <div class="logo">Ty Yan</div>
-          <nav>
-            <div class="burger" onclick="toggleMenu()">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <ul id="nav-links">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="maison.html">La maison</a></li>
-                <li><a href="tarifs.html">Tarifs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="../index.html">Retour</a></li>
-              </ul>
-          </nav>
+  <header>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo">La Taleyrandie</div>
+      <nav>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <div class="container mobile-menu" id="mobileMenu" style="display: none;">
-            <div class="container mobile-menu" id="mobileMenu" style="display: none;">
-                <a href="accueil.html">Accueil</a>
-                <a href="maison.html">La maison</a>
-                <a href="tarifs.html">Tarifs</a>
-                <a href="contact.html">Contact</a>
-                <li><a href="../index.html">Retour</a></li>
-              </div>              
-        </div>
-      </header>
+        <ul id="nav-links">
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="maison.html">La maison</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../index.html">Retour</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <!-- Menu mobile slide-in -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="accueil.html" onclick="closeMenu()">Accueil</a>
+      <a href="maison.html" onclick="closeMenu()">La maison</a>
+      <a href="tarifs.html" onclick="closeMenu()">Tarifs</a>
+      <a href="contact.html" onclick="closeMenu()">Contact</a>
+      <a href="../index.html" onclick="closeMenu()">Retour</a>
+    </div>
+  </header>
+  
       <main>
 
         <section class="section">
@@ -75,6 +76,6 @@
         </section>
     
       </main>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

@@ -5,78 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tarifs - La Taleyrandie</title>
   <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .tarifs-message {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .tarifs-message h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .tarifs-message p {
+      font-size: 1.2rem;
+    }
+
+    .tarifs-message a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tarifs-message a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
       <div class="logo">La Taleyrandie</div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="burger">&#9776;</label>
-      <ul class="nav-links">
-        <li><a href="accueil.html">Accueil</a></li>
-        <li><a href="maison.html">La Maison</a></li>
-        <li><a href="tarifs.html" class="active">Tarifs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="../index.html">Retour</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="nav-links">
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="maison.html">La maison</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../index.html">Retour</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <!-- Menu mobile slide-in -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="accueil.html" onclick="closeMenu()">Accueil</a>
+      <a href="maison.html" onclick="closeMenu()">La maison</a>
+      <a href="tarifs.html" onclick="closeMenu()">Tarifs</a>
+      <a href="contact.html" onclick="closeMenu()">Contact</a>
+      <a href="../index.html" onclick="closeMenu()">Retour</a>
+    </div>
   </header>
+  
 
-  <main class="container">
-    <section>
-      <h1>Tarifs de location</h1>
-      <p>Les locations se font du samedi au samedi. Tous les frais (ménage, linge de maison, équipements) sont inclus.</p>
-    </section>
-
-    <section class="tarifs-table">
-      <h2>Tarifs par saison</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Saison</th>
-            <th>Période</th>
-            <th>Prix / semaine</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Basse saison</td>
-            <td>Janvier - Mars / Novembre - Décembre</td>
-            <td>850 €</td>
-          </tr>
-          <tr>
-            <td>Moyenne saison</td>
-            <td>Avril - Juin / Septembre - Octobre</td>
-            <td>1 200 €</td>
-          </tr>
-          <tr>
-            <td>Haute saison</td>
-            <td>Juillet - Août</td>
-            <td>1 900 €</td>
-          </tr>
-          <tr>
-            <td>Vacances de Noël</td>
-            <td>Du 20 décembre au 2 janvier</td>
-            <td>1 500 €</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section>
-      <h2>Informations complémentaires</h2>
-      <ul>
-        <li>Heure d’arrivée : à partir de 17h</li>
-        <li>Heure de départ : avant 10h</li>
-        <li>Location à la semaine uniquement</li>
-        <li>Animaux non admis</li>
-        <li>Caution : 500 €</li>
-      </ul>
-    </section>
+  <main class="container tarifs-message">
+    <h1>Tarifs variables selon la saison</h1>
+    <p>
+      Les tarifs de location peuvent varier selon la période de l’année et la durée de votre séjour.<br/>
+      <strong>Nous vous invitons à nous contacter</strong> pour obtenir un devis personnalisé.
+    </p>
+    <p>
+      👉 <a href="contact.html">Contactez-nous ici</a>
+    </p>
   </main>
 
   <footer>
     <p>&copy; 2025 - La Taleyrandie</p>
   </footer>
+  <script src="/script.js"></script>
 </body>
 </html>

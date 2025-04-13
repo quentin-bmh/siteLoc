@@ -1,56 +1,79 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - La Taleyrandie</title>
-  <link rel="stylesheet" href="/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
       <div class="logo">La Taleyrandie</div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="burger">&#9776;</label>
-      <ul class="nav-links">
-        <li><a href="accueil.html">Accueil</a></li>
-        <li><a href="maison.html">La Maison</a></li>
-        <li><a href="tarifs.html">Tarifs</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="../index.html">Retour</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="nav-links">
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="maison.html">La maison</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../index.html">Retour</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <!-- Menu mobile slide-in -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="accueil.html" onclick="closeMenu()">Accueil</a>
+      <a href="maison.html" onclick="closeMenu()">La maison</a>
+      <a href="tarifs.html" onclick="closeMenu()">Tarifs</a>
+      <a href="contact.html" onclick="closeMenu()">Contact</a>
+      <a href="../index.html" onclick="closeMenu()">Retour</a>
+    </div>
   </header>
-
-  <main class="container">
-    <section>
-      <h1>Contactez-nous</h1>
-      <p>Une question ? Une envie de séjour dans notre havre de paix périgourdin ? Écrivez-nous, nous vous répondrons au plus vite !</p>
-    </section>
-
-    <form class="contact-form">
-      <label for="name">Nom :</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-
-      <button type="submit">Envoyer</button>
-    </form>
-
-    <section class="infos">
-      <h2>Informations pratiques</h2>
-      <p><strong>Email :</strong> lataleyrandie@location.com</p>
-      <p><strong>Téléphone :</strong> 06 12 34 56 78</p>
-      <p><strong>Adresse :</strong> Saint-Geyrac, Dordogne, Nouvelle-Aquitaine</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 - La Taleyrandie</p>
-  </footer>
+  
+      <main class="contact-container">
+        <h1>Envie de vacances à La Taleyrandie ? Écrivez-nous !</h1>
+    
+        <div class="contact-main">
+          <div class="contact-form">
+            <h2>Formulaire de contact</h2>
+            <form action="#" method="POST">
+              <input type="text" name="name" placeholder="Votre nom" required>
+              <input type="email" name="email" placeholder="Votre email" required>
+              <textarea name="message" rows="6" placeholder="Votre message..." required></textarea>
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+    
+          <div class="contact-info">
+            <h2>Coordonnées</h2>
+            <p><strong>Téléphone :</strong> 06 50 74 80 59</p>
+            <p><strong>Email :</strong> montoulieu.philippe@gmail.com</p>
+            <p><strong>Adresse :</strong> La Taleyrandie, 24330 St Geyrac, Aquitaine</p>
+            <p>Nous répondons rapidement pour toute demande de réservation ou d’information.</p>
+          </div>
+        </div>
+    
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11538.189156648764!2d0.9755739232220117!3d45.02987794619937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ffdcfb631bf9e1%3A0x405d39260edbf40!2s24330%20Saint-Geyrac!5e0!3m2!1sfr!2sfr!4v1713020000000"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        
+    
+        <p class="thanks-message">Merci pour votre visite, et à très bientôt en Bretagne 🍃</p>
+      </main>
+    <script src="/script.js"></script>
 </body>
 </html>

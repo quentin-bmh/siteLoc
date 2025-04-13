@@ -8,19 +8,34 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
       <div class="logo">La Taleyrandie</div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="burger">&#9776;</label>
-      <ul class="nav-links">
-        <li><a href="accueil.html">Accueil</a></li>
-        <li><a href="maison.html">La Maison</a></li>
-        <li><a href="tarifs.html">Tarifs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="../index.html">Retour</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="nav-links">
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="maison.html">La maison</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../index.html">Retour</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <!-- Menu mobile slide-in -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="accueil.html" onclick="closeMenu()">Accueil</a>
+      <a href="maison.html" onclick="closeMenu()">La maison</a>
+      <a href="tarifs.html" onclick="closeMenu()">Tarifs</a>
+      <a href="contact.html" onclick="closeMenu()">Contact</a>
+      <a href="../index.html" onclick="closeMenu()">Retour</a>
+    </div>
   </header>
+  
 
   <main class="container">
     <section>
@@ -89,5 +104,6 @@
   <footer>
     <p>&copy; 2025 - La Taleyrandie</p>
   </footer>
+  <script src="/script.js"></script>
 </body>
 </html>

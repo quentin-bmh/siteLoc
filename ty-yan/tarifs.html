@@ -1,40 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarifs - La Taleyrandie</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .tarifs-message {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .tarifs-message h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .tarifs-message p {
+      font-size: 1.2rem;
+    }
+
+    .tarifs-message a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tarifs-message a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-          <div class="logo">Ty Yan</div>
-          <nav>
-            <div class="burger" onclick="toggleMenu()">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <ul id="nav-links">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="maison.html">La maison</a></li>
-                <li><a href="tarifs.html">Tarifs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="../index.html">Retour</a></li>
-              </ul>
-          </nav>
+  <header>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo">La Taleyrandie</div>
+      <nav>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <div class="container mobile-menu" id="mobileMenu" style="display: none;">
-            <div class="container mobile-menu" id="mobileMenu" style="display: none;">
-                <a href="accueil.html">Accueil</a>
-                <a href="maison.html">La maison</a>
-                <a href="tarifs.html">Tarifs</a>
-                <a href="contact.html">Contact</a>
-                <li><a href="../index.html">Retour</a></li>
-              </div>              
-        </div>
-      </header>
-    <script src="script.js"></script>
+        <ul id="nav-links">
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="maison.html">La maison</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../index.html">Retour</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <!-- Menu mobile slide-in -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="accueil.html" onclick="closeMenu()">Accueil</a>
+      <a href="maison.html" onclick="closeMenu()">La maison</a>
+      <a href="tarifs.html" onclick="closeMenu()">Tarifs</a>
+      <a href="contact.html" onclick="closeMenu()">Contact</a>
+      <a href="../index.html" onclick="closeMenu()">Retour</a>
+    </div>
+  </header>
+  
+
+  <main class="container tarifs-message">
+    <h1>Tarifs variables selon la saison</h1>
+    <p>
+      Les tarifs de location peuvent varier selon la période de l’année et la durée de votre séjour.<br/>
+      <strong>Nous vous invitons à nous contacter</strong> pour obtenir un devis personnalisé.
+    </p>
+    <p>
+      👉 <a href="contact.html">Contactez-nous ici</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Ty Yan</p>
+  </footer>
+  <script src="/script.js"></script>
 </body>
 </html>

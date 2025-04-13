@@ -1,7 +1,14 @@
-function toggleMenu() {
+
+  function toggleMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
-    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+    mobileMenu.classList.toggle('show');
   }
+
+  function closeMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.remove('show');
+  }
+
 
   let currentIndex = 0;
   const track = document.getElementById("carouselTrack");
